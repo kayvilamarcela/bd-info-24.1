@@ -1,0 +1,34 @@
+            inserir_aluno(cursor)
+        elif opcao == '2':
+            inserir_disciplina(cursor)
+        elif opcao == '3':
+            inserir_professor(cursor)
+        elif opcao == '4':
+            inserir_matricula(cursor, connection)
+        elif opcao == '5':
+            listar_alunos(cursor)
+        elif opcao == '6':
+            listar_disciplinas(cursor)
+        elif opcao == '7':
+            listar_professores(cursor)
+        elif opcao == '8':
+            listar_status_aprovacao(cursor)
+        elif opcao == '9':
+            listar_alunos_reprovados(cursor)
+        elif opcao == '10':
+            listar_alunos_aprovados(cursor)
+        elif opcao == '11':
+            quantidade_alunos_aprovados(cursor)
+        elif opcao == '12':
+            quantidade_alunos_reprovados(cursor)
+        elif opcao == '13':
+            print("Saindo do sistema. Até logo!")
+            break
+        else:
+            print("Opção inválida. Tente novamente.")
+
+    cursor.close()
+    connection.close()
+
+# Chamada direta da função main()
+main()
